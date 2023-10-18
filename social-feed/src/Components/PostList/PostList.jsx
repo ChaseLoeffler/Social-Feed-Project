@@ -3,12 +3,14 @@ import Post from "../Post/Post";
 
 
 const PostList = (props) => {
+
+    const posts = props.firstPost.map((post,index) => (
+        <Post key={index} name={post.name} comment={post.comment}/>
+    ))
     return ( 
-        <table>
-            <tr>
-                <Post parentPost = {props.firstPost}/>
-            </tr>
-        </table>
+        <div>
+            {posts}
+        </div>
      );
 }
  
