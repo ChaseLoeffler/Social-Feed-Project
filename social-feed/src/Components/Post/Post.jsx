@@ -23,7 +23,6 @@ const Post = (props) => {
             {props.parentPost.map((post) => {
                 return(
                      <tr>
-                        <td>Posted: {post.date}</td>
                         <td>Likes/Dislikes</td>
                      </tr>
                     );
