@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <h1 style={{"background-color": "darkturquoise","padding-left": "1em"}}>Social<small className='text-muted'>Feed</small></h1>
       <CreatePostForm addNewPostP ={addNewPost}/>
       <PostList firstPost ={posts}/>
     </div>
