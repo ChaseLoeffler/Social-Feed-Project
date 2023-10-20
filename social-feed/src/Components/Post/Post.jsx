@@ -26,14 +26,14 @@ const Post = (props) => {
 
 
     return ( 
-        <div>
+        <div className='post-size'>
         <div>
             <header>{props.name}</header>
             <p>{props.comment}</p>
         </div>
-        <div>
-            <button className={likeButtonClass} onClick={likeButtonClicked}><i className='fa fa-thumbs-up'></i></button>
-            <button className={dislikeButtonClass} onClick={dislikeButtonClicked}><i className='fa fa-thumbs-down'></i></button>
+        <div className='thumb-buttons'>
+            <button className={likeButtonClass + " p-button"} onClick={likeButtonClicked}><i className='fa fa-thumbs-up'></i></button>
+            <button className={dislikeButtonClass + " p-button"} onClick={dislikeButtonClicked}><i className='fa fa-thumbs-down'></i></button>
         </div>
         <hr></hr>
         </div>
