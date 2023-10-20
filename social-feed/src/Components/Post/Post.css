@@ -1,0 +1,22 @@
+button {
+    padding: 5px;
+    border: none;
+    background: none;
+    color: gray; 
+}
+
+button :hover {
+    color: lightgray;
+}
+
+.l-active {
+    color: green;
+}
+
+.d-active {
+    color: red;
+}
+
+.inactive {
+    color: default;
+}
